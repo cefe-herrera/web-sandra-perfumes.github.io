@@ -1,0 +1,1711 @@
+
+/*##########################################################################################################################*/
+/*#######################################################################################################################*/
+/*________________________________Escritorio - PC________________________________________________________*/
+/*########################################################################################*/
+
+
+
+/*####################################################*/
+/* Reset */
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: "preconnect" !important;
+
+
+}
+
+@font-face{
+
+}
+/*####################################################*/
+/*Estilos GENERICOS */
+body{
+	font-family: "preconnect";
+
+
+}
+
+
+
+/* Tipos de comentarios*/
+/*#########################*/
+/*___________NAV_________*/
+
+/*################*/
+/*___Logo-Letra___*/
+
+/*####################################################*/
+/*####################################################*/
+/*####################################################*/
+/*__________________Estilos de HOME__________________*/
+
+/*####################################################*/
+/*__________________FONDOS - HOME__________________*/
+/*PENDIENTE: Que el html tenga 3 secciones y cada seccion tenga
+una imagen de fondo*/
+
+body #fondo_home{
+
+	background-image: url("../img/bannerE.png") ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*background-attachment: fixed;*/
+
+	/*_____Tamaño______*/	
+	width: 100%;
+	height: 100%;
+
+
+
+	/*___FLEX___
+	display: flex;
+	flex-direction: column;/*
+	
+	/*___GRID___*/
+
+
+
+
+}
+
+body #fondo_home_interno{
+	height: 2000px;
+	
+
+	/*___GRID___*/
+	display: grid;
+
+	grid-template-rows: 97px 89.5% 104px;
+	grid-template-columns: repeat(2, 1fr): ;
+}
+
+
+/*#############################################*/
+/*____________HEADER - HOME____________*/
+/*___Header general___*/
+
+
+header{
+
+	background-color: rgba(255, 255, 255, 0.7);
+	
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+
+	padding:20px;
+
+
+	/*_____Tamaño______*/	
+	width:100%;
+	
+
+
+	/*_____Flex______*/
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	/*_____GRID______*/
+
+	
+}
+
+/*################*/
+/*___Logo-Letra___*/
+header .logoletra{
+
+	/*_____Flex______*/
+	display: flex;
+	align-items: center;
+
+	gap: 20px;
+}
+
+
+/*################*/
+/*___Logo___*/
+header .logoletra img{
+	width:130px;
+}
+
+
+/*################*/
+/*___Titulo del logo___*/
+header .logoletra h1{
+
+	font-size: 30px;
+
+	/*_____Box modeling______*/
+	margin-top: 20px;
+
+	/*_____Flex______*/
+	display: inline-block;
+
+}
+
+
+/*#########################*/
+/*___________NAV_________*/
+.dropdown{
+	display: none;
+}
+
+
+header nav{
+	background-color: rgba(255, 255, 255, 0.4);
+
+	
+	/*___Box modeling___*/
+	margin-top: 20px;
+
+}
+
+header nav ul{
+	list-style: none;
+
+	
+	/*___Box modeling___*/
+
+
+
+	/*___FLEX___*/
+	display: flex;
+
+	gap:40px;
+	
+
+}
+
+header nav ul li{
+	font-size: 20px;
+
+	/*___Box modeling___*/
+	display: inline-block;
+
+
+}
+
+header nav ul li a{
+	text-decoration:none;
+	color:black;
+ 	/*o es mejor margin-left: 10px;??? para separar
+ 	el espacio de los botones del nav?*/
+ 	/*___Box modeling___*/
+
+ }
+
+ .boton-menu{
+ 	display: none;
+ }
+
+/*#############################################*/
+/*____________MAIN - HOME____________*/
+main {
+	padding:35px;
+
+	/*___Box modeling___*/
+	text-align:right;
+
+	/*___GRID___*/
+	display: grid;
+	grid-template-rows: 25% 47.5% 27.5%;
+	grid-template-columns: 1fr 1fr;
+
+
+}
+
+/*#####################################*/
+/*_________ITEM 1____*/
+main .item-1 h1{
+
+
+}
+
+
+main #populares{
+	width: 600px;
+
+	/*___FLEX___*/
+	display: flex;
+	flex-direction: column;
+	
+}
+
+main #populares .ventana_populares{
+	background-color: white;
+
+	margin:20px;
+	padding: 0px;
+
+	/*___Estilos___*/
+	background-color: white;
+
+	border: 2px solid white;
+	border-radius: 36px;
+
+	box-shadow: 1px 1px 10px gray;
+
+	/*___Tamaño___*/
+	width: 360px;
+	height: 230px;
+	
+	/*___Box modeling___*/
+	margin-top: -18px;
+	margin-left: 0px;
+
+	z-index: 0;
+
+
+
+}
+div.carousel-inner{
+	border-radius: 36px;
+
+	box-shadow: 1px 1px 10px gray;
+}
+.carouselExampleCaptions{
+	/*___Tratamiento de imagenes____*/
+	object-fit:cover;
+	
+}
+
+
+/*#####################################*/
+/*_________ITEM 2____*/
+main .item-2{
+
+	/*___Box modeling___*/
+	text-align: center;	
+	padding-left: 70px;
+	padding-top: 30px;
+
+	/*___FLEX___*/
+
+
+
+}
+
+.contenedorPrincipal{
+	
+
+	/*___FLEX___*/
+	display: flex;
+	flex-direction: column;
+
+
+	justify-content: center;
+	align-items: center;
+
+}
+
+.item-2 h1{
+	color: red;
+	text-shadow: -1.5px -1px 1.3px black;
+
+	font-style: italic;
+	font-size: 50px;
+
+
+	/*___Box modeling___*/
+	margin-bottom: 20px;
+	/*margin-right: 50px;*/
+}
+
+
+
+main .item-2 .contendorPrincipal{
+	
+	/*___Box modeling___*/
+	text-align: center;
+	/*margin-bottom:70px;*/	
+
+
+}
+
+
+
+.boton_todos_los_perfumes{
+	/*____Estilos___*/
+	background-color: rgb(26, 174, 159);
+	color: white;
+	border: 2px solid rgb(26, 174, 159);
+	border-radius: 20px;
+
+
+	box-shadow: 1px 1px 10px gray;
+
+	/*___TAMAÑO___*/
+	width: 400px;
+	height: 38px;
+
+	/*___FLEX___*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+
+	/*___Box modeling___*/
+	margin-top: 50px;
+
+
+
+
+}
+
+
+.boton_todos_los_perfumes a{
+	color: white;
+	text-shadow: 3px 3px 6px black;
+
+}
+
+.contenedorPrincipal h1:hover{
+	font-size: 55px;
+}
+
+.boton_todos_los_perfumes:hover{
+	background-color: rgb(211, 69, 91);
+	color: white;
+	text-decoration: none;
+	border: 2px solid rgb(211, 69, 91);
+
+}
+
+.boton_todos_los_perfumes a:hover{
+	color: rgba(0, 0, 0, 0);
+	text-shadow: 3px 3px 1px white;
+
+}
+.boton_todos_los_perfumes img:hover{
+	width: 40px;
+}
+
+div.boton_todos_los_perfumes:hover{
+	width: 407px;
+	height: 45px;
+
+}
+
+
+
+
+
+/*div.ventana_populares:hover{
+	width: 500px !important;
+
+}*/
+
+
+
+
+
+
+/*#####################################*/
+/*_________ITEM 3____*/
+.item-3{
+
+
+	/*___Box modeling___*/
+	padding-top: 160px;
+	padding-right: 50px;
+
+	/*___GRID - Heredado___*/
+	grid-column: span 2;
+
+	/*___GRID___*/
+	display: flex;
+	justify-content: end;
+	
+
+}
+
+
+body .ventanaBlog{
+
+	
+	/*___Tamaño___*/
+	width: 600px;
+	height: 280px;
+
+	/*___Box modeling___*/
+
+	
+	
+}
+
+.audio-promocional{
+	opacity: 0%;
+}
+
+.video-promocional{
+
+	border: 2px solid white;
+	border-radius: 36px;
+
+	box-shadow: 1px 1px 10px gray;
+}
+
+/*#######################*/
+/*____HOVER - ITEM 1______*/
+.ventana_populares:hover{
+	width: 400px;
+	height: 40px;
+
+}
+
+
+/*#####################################*/
+/*_________ITEM 4____*/
+
+main .item-4{
+
+
+	/*___GRID___*/
+	display: grid;
+	justify-content: right;
+
+	/*___GRID - Heredado___*/
+	grid-column: span 2;
+}
+
+main .item-4 .ventana-todos-los-perfumes{
+	/*___Box modeling___*/
+	margin-top: -30px;
+
+	/*___ESTILOS___*/
+	
+
+	/*___FLEX___*/
+	display: flex;
+	flex-direction: column;
+	
+	align-items: center;
+	
+
+
+
+	/*___TAMAÑO___*/
+
+
+}
+
+
+
+.boton-titulo{
+	/*____Estilos___*/
+	background-color: rgb(101, 88, 245);
+	color: white;
+	border: 2px solid rgb(101, 88, 245);
+	border-radius: 20px;
+
+	box-shadow: 2px 2px 20px gray;
+
+	/*____Tipografia____*/
+	font-size: 25px;
+
+	/*___TAMAÑO___*/
+	width: 360px;
+	height: 38px;
+
+	/*___FLEX___*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+
+	/*___Box modeling___*/
+	margin-top: 4px;
+
+	z-index: 1;
+}
+
+.boton-titulo h5{
+	/*___Box-Modeling___*/
+	margin-top: 4px;
+
+	/*___Estilos___*/
+	color: white;
+	text-shadow: 3px 3px 6px black;
+}
+
+div.item-4 .boton_todos_los_perfumes{
+	
+	margin-left: 35px;
+	margin-top: 10px;
+
+}
+
+/*#######################*/
+/*____IFRAME_____*/
+
+.iframe-blog{
+	z-index: 0;
+
+}
+.iframe-blog iframe{
+	/*___Estilos___*/
+	border: 2px solid white;
+
+	border-radius: 36px;
+	box-shadow: 1px 1px 10px gray;
+
+	/*____Box Modeling___*/
+	width: 480px;
+	height: 400px;
+
+	overflow-y: auto;
+	overflow-x: none;
+
+	
+}
+
+/*#############################################*/
+/*____________FOOTER - HOME____________*/
+
+/*PENDIENTE: Mover el footer hasta abajo, sin stiky [CUMPLIDO]*/
+#footer{
+
+
+
+}
+
+
+
+footer{
+	background-color: rgba(255, 255, 255, 0.3);
+
+	/*___Tamaño___*/
+	height: 100;
+	right: 104px;
+
+	/*___Box modeling___*/
+	text-align: right;
+
+	/*___Flex___*/
+
+	/*___Tipografia___*/
+
+
+
+	
+
+}
+footer ul li{
+	list-style: none;
+
+	/*___Box modeling___*/
+	display: inline-block;	
+}
+
+footer ul li img{
+	color:black;
+
+	width:35px;
+	
+}
+	
+footer h2{
+	font-family: "preconnect" !important;
+		font-size: 20px;
+}
+
+footer h3{
+
+	/*___Box modeling___*/
+	text-align: center;
+	font-family: "preconnect" !important;
+		font-size: 17px;
+}
+
+/*####################################################*/
+/*####################################################*/
+/*####################################################*/
+/*__________________Estilos de BLOG__________________*/
+/*#############################################*/
+/*____________FONDO - BLOG____________*/
+body #fondo_blog{
+	
+	/*___ESTILOS___*/
+	background-image: url("../img/blog_fondo_1.png") ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	background-attachment: fixed;
+
+	/*___Tamaño___*/
+	width: 100%;
+	height: 100%;
+
+
+	
+	/*___Box modeling___*/
+
+	/*___GRID___*/
+	/*display: grid;
+	grid-template-rows: 150px 85.5% 104px;*/
+
+	/*___FLEX___*/
+	display: flex;
+	flex-direction: column;
+
+
+
+	gap: 20px;
+}
+
+/*#############################################*/
+/*____________SECTION - BLOG____________*/
+body .section-titulo-blog{
+
+}
+
+/*#############################################*/
+/*____________MAIN - BLOG____________*/
+
+/*#########################*/
+/*_____CAJA DE BLOG GRUPAL - BLOG________*/
+
+body main.varios_blog{
+
+	/*___Tamaño___*/
+	height: 100%;
+
+	/*___Box modeling___*/
+	margin-left:65px;
+	margin-right:75px;
+
+	padding: 0px;
+	margin-top: 60px;
+	margin-bottom: 50px;
+
+
+	/*___Flex___*/
+	display: flex;
+	flex-direction: column;
+
+	gap: 30px;
+
+}
+
+/*#########################*/
+/*_____BLOG INDIVIDUAL - BLOG________*/
+.blog-individual{
+
+}
+
+.blog-individual h1{
+	
+	/*___Box modeling___*/	
+	margin:30px;
+	text-align: center;
+
+}
+
+body main.varios_blog .blog-individual{
+	background-color: rgba(255, 255, 255, 0.80);
+
+	/*___Box modeling___*/
+	padding: 10px;
+	height: 100%;
+
+
+
+}
+
+/*##############################*/
+/*_____CAJA de PARRAFO E IMAGEN - BLOG________*/
+body main.varios_blog .blog-individual .blog_parrafoYimagen{
+
+
+	/*___Flex___*/
+	display: flex;
+	flex-direction: row;
+
+	gap: 30px;
+}
+
+.blog_parrafoYimagen-PARRAFO{
+	height: 460px;
+
+	overflow: auto;
+}
+
+
+/*################*/
+/*___Parrafo___*/
+.blog_parrafoYimagen p{
+
+
+	/*___Flex___*/
+
+
+	/*___Box-Modeling___*/
+	padding: 15px;
+
+	/*___ESTILOS___*/
+	font-size: 18px;
+	letter-spacing: 0.02em;
+
+	text-indent: 70px; /*SANGRIA*/
+	text-align: left;
+	
+	word-spacing: 10px;
+	line-height: 2em;
+
+	font-size: 18px;
+
+	color: #333;
+	text-shadow: 1px 1px rgba(255,255,255,0.5);
+
+
+
+
+}
+
+/*#####################*/
+/*___Caja de imagen___*/
+body main.varios_blog .blog_parrafoYimagen .blog_imagen{
+	/*El tamaño lo hereda del PADRE - CAJA DE BLOG INDIVIDUAL*/
+
+}
+
+/*################*/
+/*___imagen___*/
+body main.varios_blog .blog_parrafoYimagen .blog_imagen img{
+	width: 300px;
+	height: 200px;
+
+	/*___Box modeling___*/
+	
+	z-index: 0;
+
+	position: sticky;
+	top: 130px;
+
+
+}
+
+
+/*####################################################*/
+/*####################################################*/
+/*####################################################*/
+/*__________________Estilos del SOBRE NOSOTROS__________________*/
+
+/*#############################################*/
+/*____________FONDO - SOBRE NOSOTROS____________*/
+body #fondo_sobreNosotros{
+	background-image: url("../img/sobreNosotros_fondo.png") ;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	background-attachment: fixed;
+
+	width: 100%;
+	height: 100%;
+	
+	/*___Box modeling___*/
+
+
+	/*___Flex___*/
+
+
+}
+
+
+body main.sobreNosotros_entrada{
+
+	background-color: rgba(255, 255, 255, 0.85);
+	
+	/*___Box modeling___*/
+	margin-left:65px;
+	margin-right:75px;
+
+	padding: 10px;
+	padding-bottom: 30px;
+	margin-top: 60px;
+	margin-bottom: 50px;
+
+
+	/*___Flex___*/
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+
+body main.sobreNosotros_entrada h1{
+	margin: 30px;
+}
+
+.blog_imagen_sobre_nosotros{
+
+}
+
+.sobreNosotros_entrada img{
+	width: 860px;
+	height: 500px;
+}
+
+.sobreNosotros_entrada p{
+	
+	padding: 15px;
+
+	font-size: 18px;
+	letter-spacing: 0.02em;
+
+	text-indent: 70px; /*SANGRIA*/
+	text-align: justify;
+	
+	word-spacing: 10px;
+	line-height: 1.5em;
+
+	/*___Flex___*/
+}
+
+
+/*#########################*/
+/*___________NAV_________*/
+
+/*################*/
+/*___Logo-Letra___*/
+
+
+
+
+/*####################################################*/
+/*####################################################*/
+/*####################################################*/
+/*__________________Estilos del SOBRE NOSOTROS__________________*/
+
+/*#############################################*/
+/*____________FONDO - SOBRE CONTACTO____________*/
+#fondo_contacto{
+	background-image: url("../img/fondo-contacto.png") ;
+
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+
+
+	width: 100%;
+	height: 720px;
+	
+	/*___Box modeling___*/
+
+
+	/*___Flex___*/
+
+	/*___GRID___*/
+	display: grid;
+	grid-template-rows: 97px 500px 104px;
+
+
+}
+/*#############################################*/
+/*____________MAIN - CONTACTO____________*/
+
+main.main-de-contacto{
+
+	margin-left: 60px;
+	/*___Box modeling___*/
+
+
+	/*___Flex___*/
+
+	/*___GRID___*/
+	display: grid;
+	grid-template-columns: 65% 35%; 
+
+
+}
+
+/*####################*/
+/*___Div FORMULARIO___*/
+.div-contacto{
+	height: 450px;
+}
+
+/*####################*/
+/*___Div FORMULARIO - Fieldset ___*/
+
+#fondo_contacto main.main-de-contacto fieldset{
+	
+	width: 600px;
+	height: 450px;	
+
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*####################*/
+/*___Div FORMULARIO - Fieldset - FORMULARIO ___*/
+#fondo_contacto form{
+
+
+
+	/*___Flex___*/
+	/*display:grid;
+	grid-template-rows: repeat(6, 1fr);*/
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	gap: 30px;
+
+	
+
+}
+
+/*####################*/
+/*___Div FORMULARIO - Fieldset - FORMULARIO - ELEMENTOS INTERNOS DEL FORMULARIO___*/
+
+#fondo_contacto form .form-item-1{
+
+	font-size: 15px;
+
+
+	width: 250px;
+	height: 30px;
+
+	/*___Flex___*/
+
+	/*___Box modeling___*/
+	margin-left: 70px
+
+}
+
+#fondo_contacto form .form-item-2{
+
+	font-size: 15px;
+
+	width: 250px;
+	height: 30px;
+	/*___Flex___*/
+
+
+	/*___Box modeling___*/
+	margin-left: 100px;
+
+}
+
+
+#fondo_contacto form .form-item-3{
+
+	font-size: 15px;
+
+
+	width: 250px;
+	height: 30px;
+	/*___Flex___*/
+
+
+	/*___Box modeling___*/
+	margin-left: 140px;
+
+}
+
+#fondo_contacto form .form-item-4{
+
+	font-size: 15px;
+
+
+	width: 250px;
+	height: 30px;
+	/*___Flex___*/
+
+
+	/*___Box modeling___*/
+	margin-left: 180px;
+
+}
+
+#fondo_contacto form .form-item-5{
+
+	font-size: 15px;
+
+
+	width: 250px;
+	height: 100px;
+	/*___Flex___*/
+
+
+	/*___Box modeling___*/
+	margin-left: 190px;
+
+}
+
+#fondo_contacto form .form-item-6{
+
+	font-size: 15px;
+
+
+	width: 250px;
+	height: 30px;
+	/*___Flex___*/
+
+	/*___Box modeling___*/
+	margin-left: 320px;
+
+	/*___Estilos___*/
+	background-color: white;
+
+	border: 2px solid white;
+	border-radius: 36px;
+
+	box-shadow: 1px 1px 10px gray;
+
+}
+
+/**/
+
+
+
+/*##########################################################################################################################*/
+/*#######################################################################################################################*/
+/*________________________________CELULAR - MOVIL________________________________________________________*/
+/*########################################################################################*/
+@media screen and (max-width:480px){
+
+	/*####################################################*/
+	/* Reset */
+	body{
+		/*___Tamaño___*/
+		width: 480px;
+		height: 100%;
+
+
+		/*___Flex___*/
+		
+	}
+	/*####################################################*/
+	/*####################################################*/
+	/*####################################################*/
+	/*__________________Estilos del HOME  - MOBILE CELULAR__________________*/
+
+	
+	/*#############################################*/
+	/*____________________GENERAL_________________*/
+	
+
+	body #fondo_home{
+		background-size: cover;
+		object-fit: cover !important;
+
+
+
+
+	}
+	body #fondo_home_interno{
+		
+	}
+
+
+	/*#############################################*/
+	/*____________________HEADER_________________*/
+	header .logoletra{
+		padding-left: 0px;
+		margin-left: 0px;
+		position: left;
+	}
+
+
+
+	header{
+		/*PENDIENTE: Resolver el sticky de mobile*/
+		position: sticky;
+		top: 1px;
+		
+
+		/*___Box modeling___*/
+		padding: 0px;
+		margin: 0px;
+
+		z-index: 2;
+
+		/*___Tamaño___*/
+		width: 480px;
+		height: 150px;
+		/*___Flex___*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		/*___GRID___*/
+
+		
+	
+	}
+	/*################*/
+	/*___Logo-Letra___*/
+	header .logoletra{
+		padding-left: 0px;
+	}
+	/*################*/
+	/*___Logo___*/
+	header .logoletra img{
+
+	}
+	/*################*/
+	/*___Letra___*/
+	header .logoletra h1{
+		font-size: 23px;
+	}
+
+
+	/*#########################*/
+	/*___________NAV_________*/
+	/*#########################*/
+	/*_____NAV - DROPDOWN______*/
+	.caja-de-nav{
+		display: none;
+	}
+
+	.dropdown{
+		display: inline-block;
+	}
+	.dropdown-menu{
+
+	}
+
+	.boton-menu{
+		display: inline-block;
+	}
+
+	/*#########################*/
+	/*___________NAV_________*/
+	div.dropdown{
+
+		box-sizing: border-box;
+
+
+		/*___Tamaño___*/
+		width: 480px;
+		height: 40px;
+
+		/*___Flex___*/
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+
+		/*___GRID___*/
+
+		/*___Box-Modeling___*/
+	
+
+		padding-bottom: 10px;
+
+		/*___Estilos___*/
+
+		background-color: white;
+
+		border: 2px solid white;
+		border-radius: 36px;
+
+		/*____Tipografia____*/
+
+	}
+
+	h6.boton-menu{
+		padding-top: 10px;
+		font-size: 18px;
+		text-align: center;
+
+	}	
+
+	header .dropdown{
+		width: 100%;
+
+	}
+
+	.dropdown ul{
+		width: 480px;
+		border: none;
+		border: 2px solid white;
+		background-color: white;
+		border-radius: 10px;
+
+	}	
+
+	.dropdown ul li{
+
+		width: 100%;
+		/*___Flex___*/
+
+		/*___Box-Modeling___*/
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		/*___Estilos___*/
+		border-top: 0.01px solid black;
+
+
+		
+	}
+	.dropdown ul .contacto{
+		border-bottom: 1px solid black;
+	}
+
+
+	/*#############################################*/
+	/*____________________Main_________________*/
+	main{
+
+		margin:0px;
+		padding: 0px;
+	
+	}
+
+	main{
+		
+
+		/*___Tamaño___*/
+		width: 100%;
+		height: 100%;
+		/*____FLEX___*/
+		display: flex;/*PENDIIENTE: Si uso INLINE-BLOCK (Se acomoda para que cuando
+		le ponga margin top a algo expanda para abaojo) si uso FLEX (Expande con margin top
+		pero no solo para abajo sino para arriba y abajo.)
+		DEMOSTRACION: Quita el display:flex y pone display:inline block Y MIRA LO QUE PASA.*/
+
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-items: center;
+
+
+
+		
+		/*___Box Modeling___*/
+
+	}
+
+	/*#####################################*/
+	/*_________ITEM 1____*/
+	main .item-1{
+		/*___Estilos___*/
+
+		/*___Tamaño___*/
+		width: 100%;
+
+		/*___Grid___*/
+
+		/*___Flex___*/
+
+		/*___Box Modeling___*/
+		
+
+
+	}
+
+	main .item-1 div#populares{
+		width: 100%	;
+		margin-top: -50px;
+
+		display:flex;
+		flex-direction: column;
+
+		align-items: center;
+
+	}
+
+	main .item-1 .mini-galeria{
+		/*___Tamñao___*/
+		height: 110px;
+	}
+
+	main .item-1 .mini-galeria img{
+		width: 30px;
+	}
+
+	main .item-1 #populares .ventana_populares{
+
+
+		/*___Box - Modeling___*/
+
+		margin-right: 0px;
+	}
+
+
+	/*#####################################*/
+	/*_________ITEM 2____*/
+	main .item-2{
+		/*___Estilos___*/
+
+		/*___Tamaño___*/
+		width: 100%;
+
+		/*___Grid___*/
+
+		/*___Flex___*/
+
+		/*___Box Modeling___*/
+		padding: 0px;
+		margin: 0px;
+
+
+	}
+
+	.mobile-main-h1-p{
+
+		/*___Box Modeling___*/
+		margin-left: -150px;
+
+		padding-right: 20px;
+	}
+
+	main .item-2 .boton_todos_los_perfumes{
+
+	}
+
+	/*#####################################*/
+	/*_________ITEM 3____*/
+	main .item-3{
+		/*___Estilos___*/
+		
+		/*___Tamaño___*/
+		width: 450px;
+		/*___Grid___*/
+
+		/*___Flex___*/
+		display: flex;
+		align-items: center;
+
+		/*___Box Modeling___*/
+		padding: 0px;
+		padding-top: 10px;
+
+	}
+
+	main .item-3 .ventanaBlog{ 
+		
+		 overflow: auto;
+		/*___Tamaño___*/
+		width: 420px;
+
+		/*___Box-Modeling___*/
+		padding: 20px;
+		margin-top: 90px;
+	}
+
+	main .item-3 .ventanaBlog:hover{
+		/*___Tamaño___*/
+		width: 420px;
+
+	}
+
+	div.ventanaBlog:hover{
+			width: 100%;
+		
+	}
+
+	/*#####################################*/
+	/*_________ITEM 4____*/
+
+	main .item-4{
+		/*___Estilos___*/
+		
+		/*___Tamaño___*/
+		width: %100;
+		/*___Grid___*/
+
+		/*___Flex___*/
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+
+	main .item-4 .ventana-todos-los-perfumes{
+		/*___Box-modeling___*/
+		margin-top: 150px;
+		width: 430px;
+	}
+
+	main .item-4 .ventana-todos-los-perfumes:hover{
+		width: 430px;
+	}
+	/*#############################################*/
+	/*____________________FOOTER_________________*/
+	footer{
+		
+		/*___Tamaño___*/
+		width: 480px;
+
+
+		/*___Box Modeling___*/
+		
+		padding: 5px;
+
+
+	}
+
+	footer ul{
+
+		/*___Tamaño___*/
+		width: 460px;
+
+
+	}
+	/*####################################################*/
+	/*####################################################*/
+	/*####################################################*/
+	/*__________________ESTILOS DEL BLOG - MOBILE CELULAR__________________*/
+
+	
+	/*#############################################*/
+	/*____________________GENERAL_________________*/
+	body #fondo_blog{
+	
+		object-fit: cover;
+		background-size: 1000px;
+		
+		background-attachment: fixed;
+
+		/*___Box Modeling___*/
+
+		/*___Tamaño___*/
+
+		/*___Flex___*/
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+
+
+	}	
+
+
+	/*#############################################*/
+	/*____________________HEADER_________________*/
+	header {
+		/*___Box Modeling___*/
+		
+		top: 0px;
+		position: sticky;
+
+
+
+	}
+
+	/*#############################################*/
+	/*____________________MAIN_________________*/
+
+	/*#########################*/
+	/*_____CAJA DE BLOG GRUPAL - BLOG________*/
+
+	body main.varios_blog{
+		/*___Tamaño___*/
+		width: 100%;
+
+
+		/*___Box Modeling___*/
+		margin: 0px;
+
+		/*___Flex___*/
+		
+
+
+	}
+
+	/*#########################*/
+/*_____BLOG INDIVIDUAL - BLOG________*/
+	body main.varios_blog .blog-individual{
+
+		/*___Tamaño___*/
+		width: 100%;
+
+		/*___Box Modeling___*/
+		
+
+	}
+
+
+	/*##############################*/
+	/*_____CAJA de PARRAFO E IMAGEN - BLOG________*/
+	body main.varios_blog .blog-individual .blog_parrafoYimagen{
+
+		/*___Flex___*/
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/*#############################################*/
+	/*____________________MAIN_________________*/
+	footer .footer-blog{
+		margin-top: 250px;
+	}
+
+
+	/*####################################################*/
+	/*####################################################*/
+	/*####################################################*/
+	/*__________ESTILOS SOBRE NOSOTROS - MOBILE CELULAR________*/
+	
+	/*#############################################*/
+	/*____________________General - sobre nosotros - mobile celular_________________*/
+	body{
+
+	}
+	#fondo_sobreNosotros{
+		object-fit: cover !important;
+		background-size: 1000px;
+	}
+
+	/*#############################################*/
+	/*____________________HEADER_________________*/
+
+
+	/*#############################################*/
+	/*____________________MAIN_________________*/
+	body main.sobreNosotros_entrada{
+		margin:0px;
+		margin-top: 30px;
+	}
+
+	/*#############################################*/
+	/*____________________FOOTER_________________*/
+
+	.footer-sobreNosotros{
+			
+	}
+
+	/*####################################################*/
+	/*####################################################*/
+	/*####################################################*/
+	/*__________ESTILOS CONTACTO - MOBILE CELULAR________*/
+	/*#############################################*/
+	/*____________________FONDO CONTANCTO_________________*/
+	#fondo_contacto{
+			object-fit: cover !important;
+		background-size: 1000px;
+
+		/*___Tamaño___*/
+		height: 100%;
+
+		/*___Flex___*/
+		display: flex;
+		flex-direction: column;
+
+
+
+
+	}
+
+	/*#############################################*/
+	/*____________________HEADER - CONTACTO_________________*/
+	header{
+
+	}
+
+	/*#############################################*/
+	/*____________________MAIN - CONTACTO_________________*/
+
+	main{
+
+		/*___Tamaño___*/
+
+	}
+
+
+	main.main-de-contacto{
+
+		/*___Tamaño___*/
+		width: 480px;
+		height: ;
+
+
+		/*____Flex___*/
+		display: flex;
+		flex-direction: column;
+
+		justify-content: start;
+		align-items: center;
+
+		/*___Box Modeling___*/
+		margin-left: 0px;
+		margin-top: 20px;
+
+
+
+	}
+
+	/*#########################*/
+	/*______CAJA DE CONTACTO_______*/
+	.main-de-contacto{
+		/*___Flex___*/
+		width:480px;
+
+		/*___Box Modeling___*/
+		padding-left: 0px;
+	}
+
+	.main-de-contacto{
+		
+	}
+	.main-de-contacto form{
+		width: 480px;
+	}
+
+		/*#########################*/
+	/*______CAJA DE CONTACTO - FIELDSET_______*/
+	#fondo_contacto main.main-de-contacto fieldset{
+		/*___Tamaño___*/
+		width: 100%;
+	}
+
+	.div-contacto{
+		/**/
+	}
+
+	/*#########################*/
+	/*______FORM - ITEMS_______*/
+	#fondo_contacto form h2{
+		padding-top: 10px;
+		text-align: center;
+	}
+
+	#fondo_contacto form .form-item-6{
+		/*___Box Modeling___*/
+		margin-left: 130px;
+	}
+
+		/*#############################################*/
+	/*____________________FOOTER- de CONTACTO_________________*/
+	.footer-de-contacto{
+		/*___Box-Modeling___*/
+		margin-top: 70px;
+	}
+
+}
+
+
+
+/*##########################################################################################################################*/
+/*#######################################################################################################################*/
+/*________________________________TABLET________________________________________________________*/
+/*########################################################################################*/
+
+@media screen and (max-width:700px){
+	
+	/*####################################################*/
+	/*####################################################*/
+	/*####################################################*/
+	/*__________________Estilos del HOME__________________*/
+
+	/*#############################################*/
+	/*____________FONDO - SOBRE CONTACTO____________*/
+	#fondo_contacto{}
+
+
+
+
+
+
+}
+
+
