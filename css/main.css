@@ -103,13 +103,14 @@ header{
 	/*_____Tamaño______*/	
 	width:100%;
 	
-		/*___Estilos___*/
+	/*___Estilos___*/
 	background-color: white;
 
 	border: 2px solid white;
-	border-radius: 36px;
+	border-radius: 0px 0px 36px 36px;
 
 	box-shadow: 1px 1px 10px gray;
+
 
 
 	/*_____Flex______*/
@@ -1208,10 +1209,12 @@ main.main-de-contacto{
 
 		/*___Estilos___*/
 
-		background-color: white;
+		background-color: ;
 
 		border: 2px solid white;
 		border-radius: 36px;
+		box-shadow: 1px 1px 10px gray;
+
 
 		/*____Tipografia____*/
 
@@ -1311,7 +1314,7 @@ main.main-de-contacto{
 
 	main .item-1 div#populares{
 		width: 100%	;
-		margin-top: -50px;
+		margin-top: 80px;
 
 		display:flex;
 		flex-direction: column;
