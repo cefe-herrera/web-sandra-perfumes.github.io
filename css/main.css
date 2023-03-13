@@ -103,6 +103,13 @@ header{
 	/*_____Tamaño______*/	
 	width:100%;
 	
+		/*___Estilos___*/
+	background-color: white;
+
+	border: 2px solid white;
+	border-radius: 36px;
+
+	box-shadow: 1px 1px 10px gray;
 
 
 	/*_____Flex______*/
