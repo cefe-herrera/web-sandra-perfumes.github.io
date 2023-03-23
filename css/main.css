@@ -1130,7 +1130,7 @@ main.main-de-contacto{
 		/*PENDIENTE: Resolver el sticky de mobile*/
 
 		/*___Tamaño___*/
-		width: 480px;
+		width: 100%;
 		height: 150px;
 
 		/*___GRID___*/
@@ -1203,7 +1203,7 @@ main.main-de-contacto{
 
 
 		/*___Tamaño___*/
-		width: 480px;
+		width: 100%;
 		height: 40px;
 
 		/*___GRID___*/
@@ -1241,7 +1241,7 @@ main.main-de-contacto{
 
 	.dropdown ul{
 		/*___Tamaño___*/
-		width: 480px;
+		width: 100%;
 
 		/*___Estilos___*/
 		border: none;
@@ -1391,7 +1391,7 @@ main.main-de-contacto{
 		/*___Estilos___*/
 		
 		/*___Tamaño___*/
-		width: 450px;
+		width: 100%;
 		/*___Grid___*/
 
 		/*___Flex___*/
@@ -1408,7 +1408,7 @@ main.main-de-contacto{
 		
 		
 		/*___Tamaño___*/
-		width: 420px;
+		width: 100%;
 
 		/*___Box-Modeling___*/
 		padding: 20px;
@@ -1419,7 +1419,7 @@ main.main-de-contacto{
 
 	main .item-3 .ventanaBlog:hover{
 		/*___Tamaño___*/
-		width: 420px;
+		width: 100%;
 
 	}
 
@@ -1448,7 +1448,7 @@ main.main-de-contacto{
 
 	main .item-4 .ventana-todos-los-perfumes{
 		/*___Tamaño___*/
-		width: 430px;
+		width: 100%;
 
 		/*___Box-modeling___*/
 		margin-top: 150px;
@@ -1457,7 +1457,7 @@ main.main-de-contacto{
 
 	main .item-4 .ventana-todos-los-perfumes:hover{
 		/*___Tamaño___*/
-		width: 430px;
+		width: 100%;
 
 	}
 	/*#############################################*/
@@ -1465,7 +1465,7 @@ main.main-de-contacto{
 	footer{
 
 		/*___Tamaño___*/
-		width: 480px;
+		width: 100%;
 
 		/*___Box Modeling___*/
 		margin-top: 50px;
