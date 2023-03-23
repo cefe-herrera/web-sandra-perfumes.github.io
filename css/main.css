@@ -30,14 +30,6 @@ body{
 }
 
 
-
-/* Tipos de comentarios*/
-/*#########################*/
-/*___________NAV_________*/
-
-/*################*/
-/*___Logo-Letra___*/
-
 /*####################################################*/
 /*####################################################*/
 /*####################################################*/
@@ -47,6 +39,7 @@ body{
 /*__________________FONDOS - HOME__________________*/
 /*PENDIENTE: Que el html tenga 3 secciones y cada seccion tenga
 una imagen de fondo*/
+
 
 body #fondo_home{
 
@@ -73,14 +66,14 @@ body #fondo_home{
 }
 
 body #fondo_home_interno{
+	/*___Tamaño___*/
 	height: 2000px;
 	
 
 	/*___GRID___*/
 	display: grid;
+	grid-template-rows: 5% 90% 5%;
 
-	grid-template-rows: 97px 89.5% 104px;
-	grid-template-columns: repeat(2, 1fr): ;
 }
 
 
@@ -93,11 +86,6 @@ header{
 
 	background-color: rgba(255, 255, 255, 0.7);
 	
-	position: sticky;
-	top: 0px;
-	z-index: 2;
-
-	padding:20px;
 
 
 	/*_____Tamaño______*/	
@@ -120,6 +108,14 @@ header{
 
 	/*_____GRID______*/
 
+	/*___Box Modeling___*/
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+
+	padding:20px;
+
+
 	
 }
 
@@ -138,6 +134,7 @@ header .logoletra{
 /*################*/
 /*___Logo___*/
 header .logoletra img{
+	/*___Tamaño___*/
 	width:130px;
 }
 
@@ -146,13 +143,14 @@ header .logoletra img{
 /*___Titulo del logo___*/
 header .logoletra h1{
 
+	/*___Estilos de texto___*/
 	font-size: 30px;
-
-	/*_____Box modeling______*/
-	margin-top: 20px;
 
 	/*_____Flex______*/
 	display: inline-block;
+
+	/*_____Box modeling______*/
+	margin-top: 20px;
 
 }
 
@@ -165,6 +163,7 @@ header .logoletra h1{
 
 
 header nav{
+	/*___Estilos___*/
 	background-color: rgba(255, 255, 255, 0.4);
 
 	
@@ -174,22 +173,21 @@ header nav{
 }
 
 header nav ul{
+	/*___Estilo de Texto___*/
 	list-style: none;
-
-	
-	/*___Box modeling___*/
-
-
 
 	/*___FLEX___*/
 	display: flex;
 
 	gap:40px;
-	
+
+	/*___Box modeling___*/
+
 
 }
 
 header nav ul li{
+	/*___Estilo de texto___*/
 	font-size: 20px;
 
 	/*___Box modeling___*/
@@ -199,6 +197,7 @@ header nav ul li{
 }
 
 header nav ul li a{
+	/*___Estilo de texto___*/
 	text-decoration:none;
 	color:black;
  	/*o es mejor margin-left: 10px;??? para separar
@@ -214,15 +213,16 @@ header nav ul li a{
 /*#############################################*/
 /*____________MAIN - HOME____________*/
 main {
-	padding:35px;
 
-	/*___Box modeling___*/
-	text-align:right;
 
 	/*___GRID___*/
 	display: grid;
 	grid-template-rows: 25% 47.5% 27.5%;
 	grid-template-columns: 1fr 1fr;
+
+	/*___Box modeling___*/
+	text-align:right;
+	padding:35px;
 
 
 }
@@ -236,6 +236,7 @@ main .item-1 h1{
 
 
 main #populares{
+	/*___Tamaño___*/
 	width: 600px;
 
 	/*___FLEX___*/
@@ -245,10 +246,6 @@ main #populares{
 }
 
 main #populares .ventana_populares{
-	background-color: white;
-
-	margin:20px;
-	padding: 0px;
 
 	/*___Estilos___*/
 	background-color: white;
@@ -263,6 +260,8 @@ main #populares .ventana_populares{
 	height: 230px;
 	
 	/*___Box modeling___*/
+	margin:20px;
+	padding: 0px;
 	margin-top: -18px;
 	margin-left: 0px;
 
@@ -272,9 +271,10 @@ main #populares .ventana_populares{
 
 }
 div.carousel-inner{
+	/*__Estilo___*/
 	border-radius: 36px;
-
 	box-shadow: 1px 1px 10px gray;
+
 }
 .carouselExampleCaptions{
 	/*___Tratamiento de imagenes____*/
@@ -286,15 +286,13 @@ div.carousel-inner{
 /*#####################################*/
 /*_________ITEM 2____*/
 main .item-2{
+	
+	/*___FLEX___*/
 
 	/*___Box modeling___*/
 	text-align: center;	
 	padding-left: 70px;
 	padding-top: 30px;
-
-	/*___FLEX___*/
-
-
 
 }
 
@@ -305,16 +303,18 @@ main .item-2{
 	display: flex;
 	flex-direction: column;
 
-
 	justify-content: center;
 	align-items: center;
 
 }
 
 .item-2 h1{
+
+	/*___Estilos___*/
 	color: red;
 	text-shadow: -1.5px -1px 1.3px black;
 
+	/*___Estilos - Texto___*/
 	font-style: italic;
 	font-size: 50px;
 
@@ -368,40 +368,46 @@ main .item-2 .contendorPrincipal{
 
 
 .boton_todos_los_perfumes a{
+	/*___Estilo de texto___*/
 	color: white;
 	text-shadow: 3px 3px 6px black;
 
 }
 
 .contenedorPrincipal h1:hover{
+	/*___Estilo de texto___*/
 	font-size: 55px;
 }
 
 .boton_todos_los_perfumes:hover{
+	/*___Estilos___*/
 	background-color: rgb(211, 69, 91);
+	border: 2px solid rgb(211, 69, 91);
+
+	/*___Estilos de texto___*/
 	color: white;
 	text-decoration: none;
-	border: 2px solid rgb(211, 69, 91);
+
 
 }
 
 .boton_todos_los_perfumes a:hover{
+	/*___Estilos de texto___*/
 	color: rgba(0, 0, 0, 0);
 	text-shadow: 3px 3px 1px white;
 
 }
 .boton_todos_los_perfumes img:hover{
+	/*___Tamaño___*/
 	width: 40px;
 }
 
 div.boton_todos_los_perfumes:hover{
+	/*___Tamaño___*/
 	width: 407px;
 	height: 45px;
 
 }
-
-
-
 
 
 /*div.ventana_populares:hover{
@@ -411,17 +417,9 @@ div.boton_todos_los_perfumes:hover{
 
 
 
-
-
-
 /*#####################################*/
 /*_________ITEM 3____*/
 .item-3{
-
-
-	/*___Box modeling___*/
-	padding-top: 160px;
-	padding-right: 50px;
 
 	/*___GRID - Heredado___*/
 	grid-column: span 2;
@@ -429,6 +427,10 @@ div.boton_todos_los_perfumes:hover{
 	/*___GRID___*/
 	display: flex;
 	justify-content: end;
+
+	/*___Box modeling___*/
+	padding-top: 160px;
+	padding-right: 50px;
 	
 
 }
@@ -436,7 +438,6 @@ div.boton_todos_los_perfumes:hover{
 
 body .ventanaBlog{
 
-	
 	/*___Tamaño___*/
 	width: 600px;
 	height: 280px;
@@ -452,7 +453,7 @@ body .ventanaBlog{
 }
 
 .video-promocional{
-
+	/*___Estilo___*/
 	border: 2px solid white;
 	border-radius: 36px;
 
@@ -462,6 +463,7 @@ body .ventanaBlog{
 /*#######################*/
 /*____HOVER - ITEM 1______*/
 .ventana_populares:hover{
+	/*___Tamaño___*/
 	width: 400px;
 	height: 40px;
 
@@ -473,7 +475,6 @@ body .ventanaBlog{
 
 main .item-4{
 
-
 	/*___GRID___*/
 	display: grid;
 	justify-content: right;
@@ -483,9 +484,8 @@ main .item-4{
 }
 
 main .item-4 .ventana-todos-los-perfumes{
-	/*___Box modeling___*/
-	margin-top: -30px;
 
+	/*___TAMAÑO___*/
 	/*___ESTILOS___*/
 	
 
@@ -494,11 +494,9 @@ main .item-4 .ventana-todos-los-perfumes{
 	flex-direction: column;
 	
 	align-items: center;
-	
 
-
-
-	/*___TAMAÑO___*/
+	/*___Box modeling___*/
+	margin-top: -30px;
 
 
 }
@@ -508,13 +506,13 @@ main .item-4 .ventana-todos-los-perfumes{
 .boton-titulo{
 	/*____Estilos___*/
 	background-color: rgb(101, 88, 245);
-	color: white;
 	border: 2px solid rgb(101, 88, 245);
 	border-radius: 20px;
 
 	box-shadow: 2px 2px 20px gray;
 
-	/*____Tipografia____*/
+	/*___Estilos de texto___*/
+	color: white;
 	font-size: 25px;
 
 	/*___TAMAÑO___*/
@@ -535,16 +533,17 @@ main .item-4 .ventana-todos-los-perfumes{
 }
 
 .boton-titulo h5{
+	/*___Estilo de texto___*/
+	color: white;
+	text-shadow: 3px 3px 6px black;
+
 	/*___Box-Modeling___*/
 	margin-top: 4px;
 
-	/*___Estilos___*/
-	color: white;
-	text-shadow: 3px 3px 6px black;
 }
 
 div.item-4 .boton_todos_los_perfumes{
-	
+	/*___Box Modeling___*/
 	margin-left: 35px;
 	margin-top: 10px;
 
@@ -554,6 +553,7 @@ div.item-4 .boton_todos_los_perfumes{
 /*____IFRAME_____*/
 
 .iframe-blog{
+	/*___Box Modeling___*/
 	z-index: 0;
 
 }
@@ -564,10 +564,11 @@ div.item-4 .boton_todos_los_perfumes{
 	border-radius: 36px;
 	box-shadow: 1px 1px 10px gray;
 
-	/*____Box Modeling___*/
+	/*___Tamaño___*/
 	width: 480px;
-	height: 400px;
+	height: 300px;
 
+	/*____Box Modeling___*/
 	overflow-y: auto;
 	overflow-x: none;
 
@@ -587,25 +588,22 @@ div.item-4 .boton_todos_los_perfumes{
 
 
 footer{
+	/*___Estilos___*/
 	background-color: rgba(255, 255, 255, 0.3);
 
 	/*___Tamaño___*/
-	height: 100;
-	right: 104px;
+	
 
-	/*___Box modeling___*/
-	text-align: right;
 
 	/*___Flex___*/
 
-	/*___Tipografia___*/
-
-
-
-	
+	/*___Box modeling___*/
+	text-align: right;	
 
 }
+
 footer ul li{
+	/*___Estilo de texto___*/
 	list-style: none;
 
 	/*___Box modeling___*/
@@ -613,15 +611,18 @@ footer ul li{
 }
 
 footer ul li img{
+	/*___Estilo de texto___*/
 	color:black;
 
+	/*___Tamaño___*/
 	width:35px;
 	
 }
 	
 footer h2{
+	/*___Estilo de texto___*/
 	font-family: "preconnect" !important;
-		font-size: 20px;
+	font-size: 20px;
 }
 
 footer h3{
@@ -629,7 +630,7 @@ footer h3{
 	/*___Box modeling___*/
 	text-align: center;
 	font-family: "preconnect" !important;
-		font-size: 17px;
+	font-size: 17px;
 }
 
 /*####################################################*/
@@ -652,9 +653,6 @@ body #fondo_blog{
 	height: 100%;
 
 
-	
-	/*___Box modeling___*/
-
 	/*___GRID___*/
 	/*display: grid;
 	grid-template-rows: 150px 85.5% 104px;*/
@@ -663,9 +661,10 @@ body #fondo_blog{
 	display: flex;
 	flex-direction: column;
 
-
-
 	gap: 20px;
+
+	/*___Box modeling___*/
+
 }
 
 /*#############################################*/
@@ -685,6 +684,13 @@ body main.varios_blog{
 	/*___Tamaño___*/
 	height: 100%;
 
+
+	/*___Flex___*/
+	display: flex;
+	flex-direction: column;
+
+	gap: 30px;
+
 	/*___Box modeling___*/
 	margin-left:65px;
 	margin-right:75px;
@@ -692,13 +698,6 @@ body main.varios_blog{
 	padding: 0px;
 	margin-top: 60px;
 	margin-bottom: 50px;
-
-
-	/*___Flex___*/
-	display: flex;
-	flex-direction: column;
-
-	gap: 30px;
 
 }
 
@@ -717,13 +716,12 @@ body main.varios_blog{
 }
 
 body main.varios_blog .blog-individual{
+	/*___Estilos___*/
 	background-color: rgba(255, 255, 255, 0.80);
 
 	/*___Box modeling___*/
 	padding: 10px;
 	height: 100%;
-
-
 
 }
 
@@ -740,8 +738,10 @@ body main.varios_blog .blog-individual .blog_parrafoYimagen{
 }
 
 .blog_parrafoYimagen-PARRAFO{
+	/*___Tamaño___*/
 	height: 460px;
 
+	/*___Box Modeling___*/
 	overflow: auto;
 }
 
@@ -749,13 +749,6 @@ body main.varios_blog .blog-individual .blog_parrafoYimagen{
 /*################*/
 /*___Parrafo___*/
 .blog_parrafoYimagen p{
-
-
-	/*___Flex___*/
-
-
-	/*___Box-Modeling___*/
-	padding: 15px;
 
 	/*___ESTILOS___*/
 	font-size: 18px;
@@ -772,6 +765,11 @@ body main.varios_blog .blog-individual .blog_parrafoYimagen{
 	color: #333;
 	text-shadow: 1px 1px rgba(255,255,255,0.5);
 
+	/*___Flex___*/
+
+
+	/*___Box-Modeling___*/
+	padding: 15px;
 
 
 
@@ -787,6 +785,7 @@ body main.varios_blog .blog_parrafoYimagen .blog_imagen{
 /*################*/
 /*___imagen___*/
 body main.varios_blog .blog_parrafoYimagen .blog_imagen img{
+	/*___Tamaño___*/
 	width: 300px;
 	height: 200px;
 
@@ -809,28 +808,34 @@ body main.varios_blog .blog_parrafoYimagen .blog_imagen img{
 /*#############################################*/
 /*____________FONDO - SOBRE NOSOTROS____________*/
 body #fondo_sobreNosotros{
+	/*___Estilos___*/
 	background-image: url("../img/sobreNosotros_fondo.png") ;
 	background-repeat: no-repeat;
 	background-size: 100%;
 
 	background-attachment: fixed;
 
+	/*___Tamaño___*/
 	width: 100%;
 	height: 100%;
 	
-	/*___Box modeling___*/
-
-
 	/*___Flex___*/
-
+	
+	/*___Box modeling___*/
 
 }
 
 
 body main.sobreNosotros_entrada{
-
+	/*___Estilos___*/
 	background-color: rgba(255, 255, 255, 0.85);
-	
+
+	/*___Flex___*/
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
 	/*___Box modeling___*/
 	margin-left:65px;
 	margin-right:75px;
@@ -840,15 +845,10 @@ body main.sobreNosotros_entrada{
 	margin-top: 60px;
 	margin-bottom: 50px;
 
-
-	/*___Flex___*/
-	display: flex;
-	flex-direction: column;
-
-	align-items: center;
 }
 
 body main.sobreNosotros_entrada h1{
+	/*___Box Modeling___*/
 	margin: 30px;
 }
 
@@ -857,14 +857,15 @@ body main.sobreNosotros_entrada h1{
 }
 
 .sobreNosotros_entrada img{
+	/*___Tamaño___*/
 	width: 860px;
 	height: 500px;
 }
 
 .sobreNosotros_entrada p{
 	
-	padding: 15px;
 
+	/*___Estilo de texto___*/
 	font-size: 18px;
 	letter-spacing: 0.02em;
 
@@ -875,6 +876,10 @@ body main.sobreNosotros_entrada h1{
 	line-height: 1.5em;
 
 	/*___Flex___*/
+
+	/*___Box Modeling___*/
+	padding: 15px;
+	
 }
 
 
@@ -885,8 +890,6 @@ body main.sobreNosotros_entrada h1{
 /*___Logo-Letra___*/
 
 
-
-
 /*####################################################*/
 /*####################################################*/
 /*####################################################*/
@@ -895,25 +898,25 @@ body main.sobreNosotros_entrada h1{
 /*#############################################*/
 /*____________FONDO - SOBRE CONTACTO____________*/
 #fondo_contacto{
+	/*___Estilos___*/
 	background-image: url("../img/fondo-contacto.png") ;
 
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
 
-
+	/*___Tamaño___*/
 	width: 100%;
 	height: 720px;
-	
-	/*___Box modeling___*/
-
-
-	/*___Flex___*/
 
 	/*___GRID___*/
 	display: grid;
 	grid-template-rows: 97px 500px 104px;
+	
+	/*___Flex___*/
 
+
+	/*___Box modeling___*/
 
 }
 /*#############################################*/
@@ -921,22 +924,21 @@ body main.sobreNosotros_entrada h1{
 
 main.main-de-contacto{
 
-	margin-left: 60px;
-	/*___Box modeling___*/
-
-
-	/*___Flex___*/
-
 	/*___GRID___*/
 	display: grid;
 	grid-template-columns: 65% 35%; 
 
+	/*___Flex___*/
+
+	/*___Box modeling___*/
+	margin-left: 60px;
 
 }
 
 /*####################*/
 /*___Div FORMULARIO___*/
 .div-contacto{
+	/*___Tamaño___*/
 	height: 450px;
 }
 
@@ -944,28 +946,27 @@ main.main-de-contacto{
 /*___Div FORMULARIO - Fieldset ___*/
 
 #fondo_contacto main.main-de-contacto fieldset{
+	background-color: rgba(255, 255, 255, 0.7);
 	
+	/*___Tamaño___*/
 	width: 600px;
 	height: 450px;	
 
-	background-color: rgba(255, 255, 255, 0.7);
 }
 
 /*####################*/
 /*___Div FORMULARIO - Fieldset - FORMULARIO ___*/
 #fondo_contacto form{
 
-
-
 	/*___Flex___*/
 	/*display:grid;
 	grid-template-rows: repeat(6, 1fr);*/
+	/*___Flex___*/
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-	gap: 30px;
 
-	
+	gap: 30px;
 
 }
 
@@ -973,10 +974,10 @@ main.main-de-contacto{
 /*___Div FORMULARIO - Fieldset - FORMULARIO - ELEMENTOS INTERNOS DEL FORMULARIO___*/
 
 #fondo_contacto form .form-item-1{
-
+	/*___Estilos de texto___*/
 	font-size: 15px;
 
-
+	/*___Tamaño___*/
 	width: 250px;
 	height: 30px;
 
@@ -988,9 +989,10 @@ main.main-de-contacto{
 }
 
 #fondo_contacto form .form-item-2{
-
+	/*___Estilos de texto___*/
 	font-size: 15px;
 
+	/*___Tamaño___*/
 	width: 250px;
 	height: 30px;
 	/*___Flex___*/
@@ -1003,10 +1005,10 @@ main.main-de-contacto{
 
 
 #fondo_contacto form .form-item-3{
-
+	/*___Estilos de texto___*/
 	font-size: 15px;
 
-
+	/*___Tamaño___*/
 	width: 250px;
 	height: 30px;
 	/*___Flex___*/
@@ -1018,10 +1020,10 @@ main.main-de-contacto{
 }
 
 #fondo_contacto form .form-item-4{
-
+	/*___Estilos de texto___*/
 	font-size: 15px;
 
-
+	/*___Tamaño___*/
 	width: 250px;
 	height: 30px;
 	/*___Flex___*/
@@ -1033,12 +1035,13 @@ main.main-de-contacto{
 }
 
 #fondo_contacto form .form-item-5{
-
+	/*___Estilos de texto___*/
 	font-size: 15px;
 
-
+	/*___Tamaño___*/
 	width: 250px;
 	height: 100px;
+
 	/*___Flex___*/
 
 
@@ -1048,17 +1051,6 @@ main.main-de-contacto{
 }
 
 #fondo_contacto form .form-item-6{
-
-	font-size: 15px;
-
-
-	width: 250px;
-	height: 30px;
-	/*___Flex___*/
-
-	/*___Box modeling___*/
-	margin-left: 320px;
-
 	/*___Estilos___*/
 	background-color: white;
 
@@ -1067,10 +1059,19 @@ main.main-de-contacto{
 
 	box-shadow: 1px 1px 10px gray;
 
+	/*___Estilos de texto___*/
+	font-size: 15px;
+
+	/*___Tamaño___*/
+	width: 250px;
+	height: 30px;
+	/*___Flex___*/
+
+	/*___Box modeling___*/
+	margin-left: 320px;
+
+	
 }
-
-/**/
-
 
 
 /*##########################################################################################################################*/
@@ -1083,7 +1084,7 @@ main.main-de-contacto{
 	/* Reset */
 	body{
 		/*___Tamaño___*/
-		width: 480px;
+		width: 100%;
 		height: 100%;
 
 
@@ -1101,6 +1102,7 @@ main.main-de-contacto{
 	
 
 	body #fondo_home{
+		/*___Tratamiento de imagen objeto___*/
 		background-size: cover;
 		object-fit: cover !important;
 
@@ -1116,6 +1118,7 @@ main.main-de-contacto{
 	/*#############################################*/
 	/*____________________HEADER_________________*/
 	header .logoletra{
+		/*___Box Modeling___*/
 		padding-left: 0px;
 		margin-left: 0px;
 		position: left;
@@ -1125,32 +1128,32 @@ main.main-de-contacto{
 
 	header{
 		/*PENDIENTE: Resolver el sticky de mobile*/
-		position: sticky;
-		top: 1px;
-		
-
-		/*___Box modeling___*/
-		padding: 0px;
-		margin: 0px;
-
-		z-index: 2;
 
 		/*___Tamaño___*/
 		width: 480px;
 		height: 150px;
+
+		/*___GRID___*/
+		
 		/*___Flex___*/
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 
-		/*___GRID___*/
-
+		/*___Box modeling___*/
+		position: sticky;
+		top: 1px;
 		
+		padding: 0px;
+		margin: 0px;
+
+		z-index: 2;
 	
 	}
 	/*################*/
 	/*___Logo-Letra___*/
 	header .logoletra{
+		/*___Box Modeling___*/
 		padding-left: 0px;
 	}
 	/*################*/
@@ -1161,6 +1164,7 @@ main.main-de-contacto{
 	/*################*/
 	/*___Letra___*/
 	header .logoletra h1{
+		/*___Estilos de texto___*/
 		font-size: 23px;
 	}
 
@@ -1174,6 +1178,7 @@ main.main-de-contacto{
 	}
 
 	.dropdown{
+		/*___Box Modeling___*/
 		display: inline-block;
 	}
 	.dropdown-menu{
@@ -1181,32 +1186,13 @@ main.main-de-contacto{
 	}
 
 	.boton-menu{
+		/*___Box Modeling___*/
 		display: inline-block;
 	}
 
 	/*#########################*/
 	/*___________NAV_________*/
 	div.dropdown{
-
-		box-sizing: border-box;
-
-
-		/*___Tamaño___*/
-		width: 480px;
-		height: 40px;
-
-		/*___Flex___*/
-		display: flex;
-		flex-direction: column;
-		justify-items: center;
-
-		/*___GRID___*/
-
-		/*___Box-Modeling___*/
-	
-
-		padding-bottom: 10px;
-
 		/*___Estilos___*/
 
 		background-color: ;
@@ -1216,24 +1202,48 @@ main.main-de-contacto{
 		box-shadow: 1px 1px 10px gray;
 
 
-		/*____Tipografia____*/
+		/*___Tamaño___*/
+		width: 480px;
+		height: 40px;
+
+		/*___GRID___*/
+
+		/*___Flex___*/
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+
+
+		/*___Box-Modeling___*/
+		box-sizing: border-box;
+
+		padding-bottom: 10px;
+
 
 	}
 
 	h6.boton-menu{
-		padding-top: 10px;
+		/*___Estilos de texto___*/
 		font-size: 18px;
 		text-align: center;
+
+		/*___Box Modeling____*/
+		padding-top: 10px;
+		
 
 	}	
 
 	header .dropdown{
+		/*___Tamaño___*/
 		width: 100%;
 
 	}
 
 	.dropdown ul{
+		/*___Tamaño___*/
 		width: 480px;
+
+		/*___Estilos___*/
 		border: none;
 		border: 2px solid white;
 		background-color: white;
@@ -1242,21 +1252,21 @@ main.main-de-contacto{
 	}	
 
 	.dropdown ul li{
-
+		/*___Estilos___*/
+		border-top: 0.01px solid black;
+		
+		/*___Tamaño___*/
 		width: 100%;
+		
 		/*___Flex___*/
 
 		/*___Box-Modeling___*/
 		padding-top: 10px;
 		padding-bottom: 10px;
 
-		/*___Estilos___*/
-		border-top: 0.01px solid black;
-
-
-		
 	}
 	.dropdown ul .contacto{
+		/*___Estilos___*/
 		border-bottom: 1px solid black;
 	}
 
@@ -1264,9 +1274,10 @@ main.main-de-contacto{
 	/*#############################################*/
 	/*____________________Main_________________*/
 	main{
-
+		/*___Box modeling___*/
 		margin:0px;
 		padding: 0px;
+
 	
 	}
 
@@ -1313,13 +1324,17 @@ main.main-de-contacto{
 	}
 
 	main .item-1 div#populares{
-		width: 100%	;
-		margin-top: 80px;
+		/*___Tamaño___*/
+		width: 100%;
 
+		/*___Flex___*/
 		display:flex;
 		flex-direction: column;
 
 		align-items: center;
+
+		/*___Box Modeling___*/
+		margin-top: 80px;
 
 	}
 
@@ -1329,14 +1344,13 @@ main.main-de-contacto{
 	}
 
 	main .item-1 .mini-galeria img{
+		/*___Tamaño___*/
 		width: 30px;
 	}
 
 	main .item-1 #populares .ventana_populares{
 
-
 		/*___Box - Modeling___*/
-
 		margin-right: 0px;
 	}
 
@@ -1364,7 +1378,6 @@ main.main-de-contacto{
 
 		/*___Box Modeling___*/
 		margin-left: -150px;
-
 		padding-right: 20px;
 	}
 
@@ -1393,13 +1406,15 @@ main.main-de-contacto{
 
 	main .item-3 .ventanaBlog{ 
 		
-		 overflow: auto;
+		
 		/*___Tamaño___*/
 		width: 420px;
 
 		/*___Box-Modeling___*/
 		padding: 20px;
 		margin-top: 90px;
+
+		overflow: auto;
 	}
 
 	main .item-3 .ventanaBlog:hover{
@@ -1409,7 +1424,8 @@ main.main-de-contacto{
 	}
 
 	div.ventanaBlog:hover{
-			width: 100%;
+		/*___Tamaño___*/
+		width: 100%;
 		
 	}
 
@@ -1420,7 +1436,7 @@ main.main-de-contacto{
 		/*___Estilos___*/
 		
 		/*___Tamaño___*/
-		width: %100;
+		width: 100%;
 		/*___Grid___*/
 
 		/*___Flex___*/
@@ -1431,26 +1447,29 @@ main.main-de-contacto{
 	}
 
 	main .item-4 .ventana-todos-los-perfumes{
+		/*___Tamaño___*/
+		width: 430px;
+
 		/*___Box-modeling___*/
 		margin-top: 150px;
-		width: 430px;
+		
 	}
 
 	main .item-4 .ventana-todos-los-perfumes:hover{
+		/*___Tamaño___*/
 		width: 430px;
+
 	}
 	/*#############################################*/
 	/*____________________FOOTER_________________*/
 	footer{
-		
+
 		/*___Tamaño___*/
 		width: 480px;
 
-
 		/*___Box Modeling___*/
-		
+		margin-top: 50px;
 		padding: 5px;
-
 
 	}
 
@@ -1470,13 +1489,12 @@ main.main-de-contacto{
 	/*#############################################*/
 	/*____________________GENERAL_________________*/
 	body #fondo_blog{
-	
+		/*___Tratamiento de imagen objeto___*/
 		object-fit: cover;
-		background-size: 1000px;
-		
-		background-attachment: fixed;
 
-		/*___Box Modeling___*/
+		/*___Estilos___*/
+		background-size: 1000px;
+		background-attachment: fixed;
 
 		/*___Tamaño___*/
 
@@ -1486,6 +1504,7 @@ main.main-de-contacto{
 
 		align-items: center;
 
+		/*___Box Modeling___*/
 
 	}	
 
@@ -1494,11 +1513,8 @@ main.main-de-contacto{
 	/*____________________HEADER_________________*/
 	header {
 		/*___Box Modeling___*/
-		
 		top: 0px;
 		position: sticky;
-
-
 
 	}
 
@@ -1512,13 +1528,10 @@ main.main-de-contacto{
 		/*___Tamaño___*/
 		width: 100%;
 
+		/*___Flex___*/
 
 		/*___Box Modeling___*/
 		margin: 0px;
-
-		/*___Flex___*/
-		
-
 
 	}
 
@@ -1547,6 +1560,7 @@ main.main-de-contacto{
 	/*#############################################*/
 	/*____________________MAIN_________________*/
 	footer .footer-blog{
+		/*___Box Modeling___*/
 		margin-top: 250px;
 	}
 
@@ -1562,7 +1576,10 @@ main.main-de-contacto{
 
 	}
 	#fondo_sobreNosotros{
+		/*___Tratamiento de imagen objeto___*/
 		object-fit: cover !important;
+
+		/*___Estilos___*/
 		background-size: 1000px;
 	}
 
@@ -1573,6 +1590,7 @@ main.main-de-contacto{
 	/*#############################################*/
 	/*____________________MAIN_________________*/
 	body main.sobreNosotros_entrada{
+		/*___Box Modeling___*/
 		margin:0px;
 		margin-top: 30px;
 	}
@@ -1591,7 +1609,10 @@ main.main-de-contacto{
 	/*#############################################*/
 	/*____________________FONDO CONTANCTO_________________*/
 	#fondo_contacto{
-			object-fit: cover !important;
+		/*___Tratamiento de imagen objeto___*/
+		object-fit: cover !important;
+		
+		/*___Estilos___*/
 		background-size: 1000px;
 
 		/*___Tamaño___*/
@@ -1658,10 +1679,11 @@ main.main-de-contacto{
 		
 	}
 	.main-de-contacto form{
+		/*___Tamaño___*/
 		width: 480px;
 	}
 
-		/*#########################*/
+	/*#########################*/
 	/*______CAJA DE CONTACTO - FIELDSET_______*/
 	#fondo_contacto main.main-de-contacto fieldset{
 		/*___Tamaño___*/
@@ -1675,6 +1697,7 @@ main.main-de-contacto{
 	/*#########################*/
 	/*______FORM - ITEMS_______*/
 	#fondo_contacto form h2{
+		/*___Box Modeling___*/
 		padding-top: 10px;
 		text-align: center;
 	}
@@ -1709,9 +1732,9 @@ main.main-de-contacto{
 
 	/*#############################################*/
 	/*____________FONDO - SOBRE CONTACTO____________*/
-	#fondo_contacto{}
+	#fondo_contacto{
 
-
+	}
 
 
 
